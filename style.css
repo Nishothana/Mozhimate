@@ -15,7 +15,7 @@
         .logo {
             font-size: 1.5em;
             font-weight: bold;
-            color: #0fa885;
+            color:#04BF8A ;
         }
         nav {
             margin-left: auto;
@@ -31,18 +31,20 @@
             position: relative;
         }
         nav ul li a {
-            color:#0fa885; 
+            color:#04D99D; 
             text-decoration: none;
             font-size: 1em;
             font-weight: 500;
             position: relative;
+        }
+        nav ul li a:hover {
+            color: #064d3c;
         }
         nav ul li a:hover::after {
             content: "";
             display: block;
             width: 100%;
             height: 2px;
-            background: #0fa885;
             position: absolute;
             left: 0;
         }
@@ -65,14 +67,18 @@
             color: black;
             display: block;
             padding: 5px 10px;
+            text-decoration: none; /* Ensures no underline */
         }
         .dropdown-menu li a:hover {
           border: 2px solid #0fa885 ;
             border-radius: 8px;
             color: rgba(0, 0, 0, 0.53);
+            text-decoration: none !important;
         }
         .dropdown:hover .dropdown-menu {
             display: block;
+            text-decoration: none;
+           
         }
         .login-btn {
             background: #0fa885;
@@ -120,5 +126,45 @@
   
   .search-container:focus-within {
     background-color: #e0e0e074;
+  }
+  
+  /*word for the day*/
+  .word-box {
+    width: 650px;
+    margin: 22px 80px; /* Centers the box */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #a9f7e586; /* Light background */
+    box-shadow: 0 4px 8px rgba(62, 214, 143, 0.256); /* Soft shadow */
+    text-align: left;
+  }
+  
+.word-box h2 {
+    font-size: 27px;
+    margin-bottom: 8px;
+    color:#012326 ;
+    text-align: left;
+}
+  
+  .word-box .word {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0F8C69; /* Highlight color */
+    
+  }
+
+  .word-box .meaning {
+    font-size: 16px;
+    color: #555;
+  }
+  .highlight {
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }  .info-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+
   }
   
