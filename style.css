@@ -56,6 +56,7 @@
             border: 2px solid #0fa885;
             border-radius: 8px;
             top: 100%;
+            z-index: 9999;
             left: 0;
             min-width: 150px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -167,4 +168,18 @@
     color: #555;
 
   }
+  .word-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between word box and image */
+    position: relative; /* Ensures image is positioned correctly */
+  }
+  
+  .word-image {
+    width: 280px; /* Adjust image size */
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
   
