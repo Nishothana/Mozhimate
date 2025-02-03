@@ -176,7 +176,7 @@
   }
   
   .word-image {
-    width: 280px; /* Adjust image size */
+    width: 380px; /* Adjust image size */
     height: 280px;
     object-fit: cover;
     border-radius: 8px;
