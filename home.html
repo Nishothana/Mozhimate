@@ -51,4 +51,15 @@
   
 </html>
 <script src="script.js" defer></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
+    document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".animate-on-load");
+
+  elements.forEach((element, index) => {
+    setTimeout(() => {
+      element.classList.add("fade-in");
+    }, index * 300); // Adds a delay effect
+  });
+});
+
+</script>
