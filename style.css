@@ -9,7 +9,7 @@
             align-items: center;
             background: white;
             color: black;
-            padding: 15px 20px;
+            padding: 12px 20px;
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         }
         .logo {
@@ -98,41 +98,47 @@
             
         }
         
-/*search*/
+/* Hero Section */
+.hero {
+  background:#0fa885;
+  padding: 65px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero .logo img {
+  width: 300px; /* Adjust logo size */
+}
+
 .search-container {
-    display: flex;
-    align-items: center;
-    width: 600px; /* Adjust width as needed */
-    padding: 8px;
-    border-radius: 25px;
-    background-color: #f2f2f2;
-    transition: background-color 0.3s ease;
-    position: relative;
-    margin: 30px auto; /* Centers horizontally and adds space below the header */
-    opacity: 0;
-  transform: translateY(50px);
-  animation: fadeInUp 0.5s ease-in forwards;
-  }
-  
-  .search-container input {
-    border: none;
-    outline: none;
-    background: transparent;
-    flex: 1;
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  .search-container .material-icons {
-    color: #0fa885;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+}
+
+.search-container .material-icons {
+  color: gray;
+  cursor: pointer;
+}
   .search-container:focus-within {
-    background-color: #e0e0e074;
+    background-color: #ffffff;
   }
   
-  /*word for the day*/
+/*word for the day*/
   .word-box {
     width: 650px;
     margin: 22px 80px; /* Centers the box */
@@ -157,7 +163,7 @@
   .word-box .word {
     font-size: 20px;
     font-weight: bold;
-    color: #0F8C69; /* Highlight color */
+    color: #012326; /* Highlight color */
     
   }
 
