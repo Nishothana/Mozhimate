@@ -24,7 +24,7 @@
             </ul>
         </nav>
         <button class="login-btn">
-            <i class="material-icons"></i><a href="login.html"></a>Login</i>
+            <i class="material-icons"></i><a href="login.html">Login</a></i>
         </button>
     </header>
 
@@ -55,6 +55,54 @@
   
     <img src="images/herobg.webp" alt="Word Image" class="word-image">
   </div>
+<br><br>
+  <div class="main-container">
+    <!-- Left Section: About Us -->
+    <div class="left-section">
+      <h2>About Us</h2>
+      <p>Some information about your app...</p>
+    </div>
+  
+    <!-- Right Section: Add New Word Form -->
+    <div class="right-section">
+      <div class="admin-panel">
+        <h2 class="section-title">Add a New Word</h2>
+        <form id="addWordForm">
+          <div class="form-group">
+            <label for="tamilWord">Tamil Word</label>
+            <input type="text" id="tamilWord" class="form-input" placeholder="Enter Tamil word" required><br>
+          </div>
+  
+          <div class="form-group">
+            <label for="tamilMeaning">Tamil Meaning</label>
+            <input id="tamilMeaning" class="form-input" placeholder="Enter Tamil meaning" required><br>
+          </div>
+  
+          <div class="form-group">
+            <label for="englishMeaning">English Meaning</label>
+            <input id="englishMeaning" class="form-input" placeholder="Enter English meaning" required><br>
+          </div>
+  
+          <div class="form-group">
+            <label for="exampleSentence">Example Sentence</label>
+            <textarea id="exampleSentence" class="form-input" placeholder="Enter an example sentence" required></textarea><br>
+          </div>
+  
+          <button type="submit" class="submit-btn">Add Word</button>
+        </form>
+      </div>
+  
+      <!-- Success Message -->
+      <div id="successMessage" class="success-message">
+        <h3>Word Added Successfully!</h3>
+        <button onclick="closeSuccessMessage()">Close</button>
+      </div>
+    </div>
+  </div>
+  
+
+
+
 </body>
 </html>
 <script src="script.js" defer></script>
@@ -68,5 +116,4 @@
     }, index * 300); // Adds a delay effect
   });
 });
-
 </script>
