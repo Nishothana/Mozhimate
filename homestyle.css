@@ -30,6 +30,16 @@
             margin: 0 15px;
             position: relative;
         }
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: bold;
+      }
+  
+      a:hover {
+          color: #ffffff;
+          text-decoration: underline;
+      }
         nav ul li a {
             color:#04D99D; 
             text-decoration: none;
