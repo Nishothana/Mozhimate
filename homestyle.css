@@ -236,3 +236,123 @@
     transform: translateY(0);
   }
   
+
+/* Main container for layout */
+.main-container {
+  display: flex;
+  height: 400px; /* Full screen height */
+  justify-content: space-between; /* Pushes the sections to left and right */
+  align-items: flex-start; /* Aligns items at the top */
+}
+
+/* Left Section: About Us */
+.left-section {
+  width: 60%; /* Left section takes up 3/4 of the screen */
+  padding: 20px;
+  background-color: #f4f4f47e;
+  box-sizing: border-box;
+}
+
+/* Right Section: Add New Word Form */
+.right-section {
+  width: 40%; /* Right section takes up 1/4 of the screen */
+  padding: 8px;
+  background-color: #04BF8A;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Add your admin panel styling here */
+.admin-panel {
+  max-width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #064d3c;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 8px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #064d3c;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+textarea.form-input {
+  height: 100px;
+}
+
+textarea.form-input:focus,
+input.form-input:focus {
+  border-color: #0fa885;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #064d3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #0fa885;
+}
+
+/* Success message styling */
+.success-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #0fa885;
+  padding: 20px;
+  border: #04BF8A 2px solid;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+  z-index: 1000;
+}
+
+.success-message button {
+  background-color: #04d99d76;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.success-message button:hover {
+  background-color: #012326;
+  color: white;
+}
