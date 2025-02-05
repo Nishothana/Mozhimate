@@ -9,7 +9,16 @@ body {
     height: 100vh;
     background-color: #f4f4f4;
 }
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
 
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
 /* Login Container */
 .login-container {
     display: flex;
@@ -47,24 +56,36 @@ input {
     font-size: 14px;
 }
 
-/* Remember Me & Forgot Password */
+/* Flex container to align both elements in a row */
 .remember-forgot {
     display: flex;
-    cursor: pointer;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-}
-
-.remember-forgot a {
-    color: #0fa885;
-    text-decoration: none;
+    justify-content: space-between; /* Ensures spacing between both elements */
+    align-items: center; /* Aligns elements vertically */
+    margin-top: 10px;
+    font-size: 14px; /* Ensures both have the same font size */
     font-weight: bold;
+    color: #064d3c;
 }
 
-.remember-forgot a:hover {
-    text-decoration: underline;
+/* Keep checkbox and text together */
+.remember-label {
+    display: flex;
+    align-items: center; /* Ensures checkbox and text are aligned */
+    gap: 3px; /* Adds a small gap between checkbox and text */
+    white-space: nowrap; /* Prevents text from wrapping */
 }
+
+/* Styling for Forgot Password link */
+.forgot-password {
+    text-decoration: none;
+    color: #064d3c; /* Same color as Remember Me */
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #0fa885;
+}
+
 
 /* Buttons */
 button {
@@ -91,6 +112,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     border-left: 3px solid #064d3c;
+    
 }
 
 .login-logo img {
