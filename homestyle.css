@@ -344,26 +344,83 @@ input.form-input:focus {
   color: white;
 }
 
-/*boxmeaning*/
+/* Word Box */
+/* Word Box Container */
+.word-box-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures boxes move to the next row when full */
+  justify-content: center; /* Centers the rows */
+  gap: 15px; /* Adds space between boxes */
+  padding: 20px; /* Adds padding around the boxes */
+}
+
+/* Word Box */
 .box {
-  width: 80%;
-  max-width: 500px;
+  width: calc(33.33% - 20px); /* Makes 3 boxes fit in a row */
+  max-width: 300px; /* Limits box width */
   background: #064d3c;
   color: white;
-  margin: 10px 0;
   padding: 15px;
   border-radius: 8px;
   cursor: pointer;
+  text-align: center;
   transition: 0.3s;
 }
+
+/* Hover Effect */
 .box:hover {
   background: #0fa885;
 }
-.content {
-  display: none;
-  padding: 10px;
+
+/* Responsive: 2 Boxes in a Row for Tablets */
+@media (max-width: 768px) {
+  .box {
+      width: calc(50% - 20px); /* Makes 2 boxes in a row */
+  }
+}
+
+/* Responsive: 1 Box per Row for Small Screens */
+@media (max-width: 500px) {
+  .box {
+      width: 100%; /* Makes each box take full width */
+  }
+}
+
+
+/* Ensure Modal is Initially Hidden */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content Box */
+.modal-content {
   background: white;
-  color: black;
-  margin-top: 5px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Close Button */
+.close {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #064d3c;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
