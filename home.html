@@ -107,11 +107,32 @@
     </div>
   </div>
   
+<!-- meaning box -->
+
+  <div class="box" onclick="toggleBox(this)">
+    <h3>மர்க்கம் (Markkam)</h3>
+    <div class="content">
+        <p><b>English Meaning:</b> A mark or stain</p>
+        <p><b>Example:</b> The book had a small mark on the cover.</p>
+        <p><b>தமிழ் அர்த்தம்:</b> ஒரு மச்சம் அல்லது குறை</p>
+        <p><b>எடுத்துக்காட்டு:</b> அந்த புத்தகத்தின் அட்டையில் ஒரு சிறிய மச்சம் இருந்தது.</p>
+    </div>
+</div>
+
+<div class="box" onclick="toggleBox(this)">
+    <h3>உமுண்டி (Umundi)</h3>
+    <div class="content">
+        <p><b>English Meaning:</b> A small stone or pebble</p>
+        <p><b>Example:</b> I found a shiny pebble near the river.</p>
+        <p><b>தமிழ் அர்த்தம்:</b> ஒரு சிறிய கல்</p>
+        <p><b>எடுத்துக்காட்டு:</b> நானொரு பிரகாசமான சிறிய கல்லை ஆற்றின் அருகில் கண்டுபிடித்தேன்.</p>
+    </div>
+</div>
 
 
 
-</body>
-</html>
+
+
 <script src="script.js" defer></script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
     document.addEventListener("DOMContentLoaded", function () {
@@ -125,4 +146,14 @@
 });
 
 
+function toggleBox(box) {
+            let content = box.querySelector(".content");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
 </script>
+</body>
+</html>
